@@ -9,77 +9,105 @@
     box-sizing: border-box;
     font-family: "Roboto Mono", serif;
 }
-
-body{
-    background: #1f1e1e;
-    justify-content: center;
-    align-items: center;
+/* Reset some basic styles for the page */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-}
-canvas{
-    background-color: rgb(27, 25, 25);
-    border: 4px solid #2e2d2db6;
-    border-radius: 5px;
-    box-shadow: 2px 2px 6px #000,
-                -2px -2px 6px #000;
-}
-p{
-    color: #10f510;
-    position: absolute;
-    top: 0;
-}
-.controls{
-    height: 120px;
-    width: 500px;
-   gap: 10px;
-    margin-top: 13px;
-    justify-content: center;
-    align-items: center;
+    
+    background-color: #1d1c1c;
+  }
+  p{
+    color: #15f10d;
+  }
+  canvas {
+    margin-top: 10px;
+    border: 2px solid rgb(41, 41, 41);
+  }
+  
+  /* Controls Layout */
+  .controls {
     display: flex;
     flex-direction: column;
-}
-.cont{
-    justify-content: center;
     align-items: center;
-    display: flex;
-    gap: 100px;
-}
-.up{
-    width: 40%;
-    height: 40px;
-}
-.cent{
-    width: 100%;
-    height: 40px;
-    gap:20px;
-}
-.btm{
-    width: 40%;
-    height: 40px;
-}
-button{
-    height: 100%;
-    width: 100px;
-    border: 2px solid #000;
-    background: #000;
-    color: #fff;
-     border-radius: 10%;
-     box-shadow: 2px 2px 6px #242323,
-     -2px -2px 6px #242323;
-}
-i{
-    color: #22e722;
-    font-size: 24px;
-}
-#restart{
     position: absolute;
-    left: 20px;
-    top: auto;
-    bottom: 80px;
-    background: red;
-    height: 40px;
-    width: 100px;
-    font-size: 15px;
-}
+    bottom: 0;
+    left: 25%;
+  
+  }
+  
+  .controls div {
+    display: flex;
+    gap: 10px;
+
+    
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    background-color: #0c0c0c;
+    color: rgb(18, 221, 52);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 50px; /* Make buttons smaller */
+  }
+  
+  button:hover {
+    background-color: #3bb30cb0;
+  }
+  
+  #restart {
+    display: none;
+    background-color: red;
+    color: #fff;
+    width: 100px; /* Make restart button wider */
+  }
+  
+  @media (max-width: 600px) {
+    canvas {
+      width: 90vw;
+      height: 60vh;
+    }
+  
+    .controls {
+      bottom: 5%;
+    }
+  
+    button {
+      padding: 12px;
+      font-size: 18px;
+      width: 50px; /* Make buttons smaller for mobile */
+    }
+  
+    #restart {
+      width: 120px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .controls {
+      bottom: 0;
+    }
+  
+    button {
+      padding: 3px;
+      font-size: 12px;
+      width: 15px; /* Even smaller buttons on very small screens */
+    }
+  
+    #restart {
+      width: 50px;
+      font-size: 9px;
+    }
+  }
+  
