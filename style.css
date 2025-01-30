@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", serif;
+}
+
+body{
+    background: #1f1e1e;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+canvas{
+    background-color: rgb(27, 25, 25);
+    border: 4px solid #2e2d2db6;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px #000,
+                -2px -2px 6px #000;
+}
+p{
+    color: #10f510;
+    position: absolute;
+    top: 0;
+}
+.controls{
+    height: 120px;
+    width: 500px;
+   gap: 10px;
+    margin-top: 13px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.cont{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 100px;
+}
+.up{
+    width: 40%;
+    height: 40px;
+}
+.cent{
+    width: 100%;
+    height: 40px;
+    gap:20px;
+}
+.btm{
+    width: 40%;
+    height: 40px;
+}
+button{
+    height: 100%;
+    width: 100px;
+    border: 2px solid #000;
+    background: #000;
+    color: #fff;
+     border-radius: 10%;
+     box-shadow: 2px 2px 6px #242323,
+     -2px -2px 6px #242323;
+}
+i{
+    color: #22e722;
+    font-size: 24px;
+}
