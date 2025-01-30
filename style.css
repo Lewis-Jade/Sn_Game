@@ -73,3 +73,10 @@ i{
     color: #22e722;
     font-size: 24px;
 }
+#restart{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background: red;
+    height: 40px;
+}

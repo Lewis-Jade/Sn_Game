@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const downBtn = document.getElementById("down");
     const leftBtn = document.getElementById("left");
     const rightBtn = document.getElementById("right");
+    const restartBtn = document.getElementById("restart");
   
     if (!canvas || !ctx) {
       console.error("Canvas not found!");
@@ -70,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ctx.fillStyle = "red";
         ctx.font = "30px Arial";
         ctx.fillText("Game Over!..Molly😁😁", canvas.width / 4, canvas.height / 2);
+        restartBtn.style.display = "block"; // Show restart button
       }
     }
   
@@ -125,6 +127,10 @@ document.addEventListener("DOMContentLoaded", function () {
     downBtn.addEventListener("click", () => { if (direction !== "UP") direction = "DOWN"; });
     leftBtn.addEventListener("click", () => { if (direction !== "RIGHT") direction = "LEFT"; });
     rightBtn.addEventListener("click", () => { if (direction !== "LEFT") direction = "RIGHT"; });
+    // Restart game
+  restartBtn.addEventListener("click", () => {
+    initGame();
+  });
   
     window.addEventListener("resize", resizeCanvas);
     resizeCanvas();
