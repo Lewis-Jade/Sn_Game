@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
         canvas.width = window.innerWidth * 0.9;
         canvas.height = window.innerHeight * 0.7;
       } else {
-        canvas.width = 500;
-        canvas.height = 500;
+        canvas.width = 400;
+        canvas.height = 400;
       }
       box = Math.floor(canvas.width / 20);
       initGame();
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
       if (gameOver) {
         ctx.fillStyle = "red";
-        ctx.font = "30px Arial";
+        ctx.font = "20px Arial";
         ctx.fillText("Game Over!..Molly😁😁", canvas.width / 4, canvas.height / 2);
         restartBtn.style.display = "block"; // Show restart button
       }
