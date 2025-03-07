@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (gameOver) {
         ctx.fillStyle = "red";
         ctx.font = "20px Arial";
-        ctx.fillText("Game Over!..Molly😁😁", canvas.width / 4, canvas.height / 2);
+        ctx.fillText("Game Over!..Mzee😁😁", canvas.width / 4, canvas.height / 2);
         restartBtn.style.display = "block"; // Show restart button
       }
     }
